@@ -12,6 +12,6 @@
 		$yakin[$z]["fiyat"][$y] = $restoran[$i]["fiyat"][$y];
 		}
 		$z++;
-	}
+	} 
 	}
 	 ?>
