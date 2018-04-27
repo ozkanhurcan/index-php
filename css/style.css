@@ -1,0 +1,49 @@
+body{
+
+}
+       #container{
+        width: 85%;
+        margin: 0 auto;
+       }
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+       .data{
+       	font-size: 1.3vw;
+       	float: left;
+       	margin-top:2%;
+       	width: 100%;
+       	height: 15%;
+       	font-family: Comic Sans Ms;
+       }
+       .data img{
+       	max-height: 150px;
+       	float: left;
+       	display: block;
+       	width: 20%;
+       }
+       .data h2{
+       	border-radius: 7px;
+       	padding-left: 2%;
+       	margin: 0 auto;
+       	float: left;
+       	display: block;
+       	background-color: #70a1ef;
+       	width: 75%;
+       }
+       .data p{
+       	float: left;
+       	display: block;
+       	margin-left: 3%;
+		height: 100%;
+       }
+
+       .id{
+       	display: none;
+       }
+       .data ul{
+       	display: block;
+       	float:left;
+			list-style-type: none;
+       }
