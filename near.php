@@ -5,11 +5,11 @@ $sqlrest = "SELECT * FROM restoranlar";
 
 $rest = $conn->query($sqlrest);
 
-if ($rest->num_rows >0) { 
+if ($rest->num_rows >0) {
  while($row[] = $rest->fetch_assoc()) {
-  $restoran = $row; 
+  $restoran = $row;
   $json = json_encode($restoran);
- } 
+ }
 } else {
  echo "No Results Found.";
 }
@@ -18,13 +18,13 @@ $sqlmenu = "SELECT yemek_adi,fiyati FROM menu";
 
 $menu = $conn->query($sqlmenu);
 
-if ($menu->num_rows >0) { 
+if ($menu->num_rows >0) {
 
 	while($menurows[] = $menu->fetch_assoc()) {
 
 		$item = $menurows;
-	} 
-} 
+	}
+}
 else {
 	echo "No Results Found.";
 }
@@ -42,7 +42,7 @@ for($i=0;$i<count($item);$i++){
 	$restoran[$y]["fiyat"][$z]=$item[$i]["fiyati"];
 	$z++;
 }   //array('lng' => 41.0133722, 'lat' => 28.9738776)
-    include 'yakin.php';
+    include 'circle.php';
 	//print_r($yakin);
 	/*for($i=0;$i<count($yakin);$i++){
 		$latlng[$i]["lat"]= $yakin[$i]["latitude"];
